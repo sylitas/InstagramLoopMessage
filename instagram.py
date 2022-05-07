@@ -31,11 +31,11 @@ def send_jokes(time_between_jokes):
         time.sleep(time_between_jokes)
 
 #-------------------------------
-username = input("Tên đăng nhập: ")
-password = input("Mật Khẩu: ")
-userToSpam = input("Tên người nhắn để spam: ")
-message_to_send= input("Nội dung tin nhắn spam: ")
-time_between_jokes = int(input("Thời gian spam: "))
+username = input("Input Instagram username: ")
+password = input("Input Instagram password: ")
+userToSpam = input("name of user that you want to spam: ")
+message_to_send= input("Message: ")
+time_between_jokes = int(input("The time between each message: "))
 browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 browser.get('https://instagram.com/')
 browser.implicitly_wait(5)
